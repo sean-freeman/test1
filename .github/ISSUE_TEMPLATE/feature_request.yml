@@ -76,7 +76,7 @@ body:
       required: true
 
   - type: textarea
-    id: description
+    id: attempted-solution
     attributes:
       label: Optional - Attempted solutions or manual steps
       description: If you already have some Ansible code or manual steps (shell commands), please paste these below
