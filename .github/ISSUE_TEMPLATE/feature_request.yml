@@ -1,6 +1,6 @@
 name: Feature request
 description: Request a feature or enhancement to the Ansible Collection
-title: "feat: <ansible_role_name> <short desc>"
+title: "feat: <ansible_role_name> <short_desc>"
 labels: [enhancement]
 body:
   - type: markdown
@@ -10,9 +10,7 @@ body:
         
         Thank you for taking the time to fill out this feature request!
 
-        Before raising a feature request, please read the documentation of the Ansible Role where the feature or enhancement is requested.
-        
-        Such as [community.sap_install/roles/sap_hana_install/README](https://github.com/sap-linuxlab/community.sap_install/blob/main/roles/sap_hana_install/README.md).
+        Before raising a feature request, please read the documentation of the Ansible Role where the feature or enhancement is requested; such as [community.sap_install/roles/sap_hana_install/README](https://github.com/sap-linuxlab/community.sap_install/blob/main/roles/sap_hana_install/README.md)
 
   - type: dropdown
     id: role
@@ -34,6 +32,7 @@ body:
         - sap_netweaver_preconfigure
         - sap_storage_setup
         - sap_swpm
+      default: 0
     validations:
       required: true
 
@@ -46,7 +45,7 @@ body:
         - All
         - RHEL
         - SLES
-      default: 2
+      default: 0
     validations:
       required: true
 
