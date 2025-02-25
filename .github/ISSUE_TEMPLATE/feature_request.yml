@@ -1,20 +1,23 @@
 name: Feature request
-description: Suggest a feature that will improve this role
-title: "feat: "
+description: Request a feature or enhancement to the Ansible Collection
+title: "feat: <ansible_role_name> <short desc>"
 labels: [enhancement]
 body:
   - type: markdown
     attributes:
       value: |
+
         Thank you for taking the time to fill out this feature request!
 
-        Please carefully read [the documentation](https://github.com/sap-linuxlab/community.sap_install/tree/main/docs#readme) before creating a feature request
+        Before raising a feature request, please read the documentation of the Ansible Role where the feature or enhancement is requested.
+        
+        Such as [community.sap_install/roles/sap_hana_install/README](https://github.com/sap-linuxlab/community.sap_install/blob/main/roles/sap_hana_install/README.md).
 
   - type: dropdown
     id: role
     attributes:
-      label: Role
-      description: For what role is the feature you want to propose meant to be?
+      label: Ansible Role
+      description: Which Ansible Role are you proposing a feature or enhancement for?
       options:
         - All
         - sap_anydb_install_oracle
@@ -36,12 +39,12 @@ body:
   - type: dropdown
     id: os-family
     attributes:
-      label: OS family
-      description: For what operating systems family is the feature you want to propose meant to be?
+      label: OS Family
+      description: Is feature or enhancement OS specific?
       options:
-        - RHEL (7.x, 8.x, 9.x)
-        - SLES (15 SPx)
         - All
+        - RHEL
+        - SLES
       default: 2
     validations:
       required: true
@@ -49,9 +52,12 @@ body:
   - type: textarea
     id: description
     attributes:
-      label: Describe the feature
-      description: A clear and concise description of what you think would be a helpful addition to this role, including the possible use cases and alternatives you have considered.
-      placeholder: Feature description
+      label: Feature/Enhancement request
+      description: A clear and concise description of what will improve the Ansible Role; please include use cases.
+      placeholder:
+        - e.g. I think [...] would help clarity to end-users during execution.
+        - e.g. I think [...] is required to avoid [...] problem/s occuring.
+        - e.g. I think [...] is missing according to [citation] SAP documentation.
     validations:
       required: true
 
@@ -59,9 +65,10 @@ body:
     id: additional
     attributes:
       label: Additional information
-      description: Do you want to implement this feature by yourself?
+      description: Do you want to contribute/implement this feature by yourself?
       options:
         - I can implement this feature
+        - I can implement this feature, but need help as it is my first time contributing to open-source using git
         - I can't/won't implement this feature
     validations:
       required: true
@@ -72,5 +79,5 @@ body:
       label: Final checks
       description: Before submitting, please make sure you do the following
       options:
-        - label: I've read [the documentation](https://github.com/sap-linuxlab/community.sap_install/tree/main/docs#readme).
+        - label: Yes, I read the documentation
           required: true
