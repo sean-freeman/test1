@@ -53,33 +53,43 @@ body:
     id: description
     attributes:
       label: Feature/Enhancement request
-      description: A clear and concise description of what will improve the Ansible Role; please include use cases.
+      description: A clear and concise description of what will improve the Ansible Role; please include use cases for the desired final outcome.
       placeholder: |
-        e.g. I think [...] would help clarity to end-users during execution.
+        e.g. I believe [...] would help clarity to end-users during execution.
 
-        e.g. I think [...] is required to avoid [...] problem/s occuring.
+        e.g. I believe [...] is required to avoid [...] problem/s occuring.
 
-        e.g. I think [...] is missing according to [citation] SAP documentation.
+        e.g. I believe [...] is missing according to [citation] SAP documentation.
     validations:
       required: true
 
   - type: dropdown
     id: additional
     attributes:
-      label: Additional information
-      description: Do you want to contribute/implement this feature by yourself?
+      label: Community participation
+      description: Do you want to join our community and contribute/implement this feature yourself?
       options:
         - I can implement this feature
         - I can implement this feature, but need help as it is my first time contributing to open-source using git
-        - I can't/won't implement this feature
+        - I cannot implement this feature
     validations:
       required: true
 
-  - type: checkboxes
-    id: final-checks
+  - type: textarea
+    id: description
     attributes:
-      label: Final checks
-      description: Before submitting, please make sure you do the following
+      label: Optional - Attempted solutions or manual steps
+      description: If you already have some Ansible code or manual steps (shell commands), please paste these below
+      placeholder: |
+        <paste example code here>
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      description: Before submitting this request, please confirm
       options:
         - label: Yes, I read the documentation
           required: true
