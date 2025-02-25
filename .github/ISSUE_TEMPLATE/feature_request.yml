@@ -6,7 +6,8 @@ body:
   - type: markdown
     attributes:
       value: |
-
+        :wave:
+        
         Thank you for taking the time to fill out this feature request!
 
         Before raising a feature request, please read the documentation of the Ansible Role where the feature or enhancement is requested.
