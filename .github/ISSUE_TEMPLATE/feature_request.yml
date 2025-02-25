@@ -55,10 +55,12 @@ body:
     attributes:
       label: Feature/Enhancement request
       description: A clear and concise description of what will improve the Ansible Role; please include use cases.
-      placeholder:
-        - e.g. I think [...] would help clarity to end-users during execution.
-        - e.g. I think [...] is required to avoid [...] problem/s occuring.
-        - e.g. I think [...] is missing according to [citation] SAP documentation.
+      placeholder: |
+        e.g. I think [...] would help clarity to end-users during execution.
+
+        e.g. I think [...] is required to avoid [...] problem/s occuring.
+
+        e.g. I think [...] is missing according to [citation] SAP documentation.
     validations:
       required: true
 
