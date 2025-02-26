@@ -75,19 +75,16 @@ body:
   - type: textarea
     id: description
     attributes:
-      label: Describe the bug
-      description: |
-        A clear and concise description of what the bug is.
-
-        Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
+      label: Bug Description
+      description: Please provide a clear and concise description of the bug. You can attach images (drag-and-drop) or log files as required.
     validations:
       required: true
 
   - type: textarea
     id: reproduction
     attributes:
-      label: How to reproduce the bug
-      description: Please provide a way for us to be able to reproduce the problem you ran into.
+      label: Bug reproduction
+      description: Please provide the steps you performed, so we can try to reproduce the problem you ran into
     validations:
       required: true
 
@@ -97,26 +94,18 @@ body:
       label: Additional information
       description: Do you intend to submit a **Pull Request** to solve this bug?
       options:
-        - I can solve this bug
-        - I can't solve this bug
+        - I will raise a Pull Request with the code fix
+        - I am unable to contribute the fix
     validations:
       required: true
 
-  - type: textarea
-    id: additional-duplicated-issue
-    attributes:
-      label: I've already checked for existing duplicated [issues](https://github.com/sap-linuxlab/community.sap_install/issues?q=is%3Aissue+label%3Abug).
-      description: |
-        Is there any related [issues](https://github.com/sap-linuxlab/community.sap_install/issues?q=is%3Aissue+label%3Abug) that you think is linked to this bug? 
-
-        Add link to the issue or leave empty if there are none!
-      placeholder: Issue duplicated
-
   - type: checkboxes
-    id: required-info
+    id: checks
     attributes:
-      label: Final checks
-      description: Before submitting, please make sure you do the following
+      label: Checks
+      description: Before submitting this request, please confirm
       options:
-        - label: I've read [the documentation](https://github.com/sap-linuxlab/community.sap_install/tree/main/docs#readme).
+        - label: Yes, I read the documentation
+          required: true
+        - label: Yes, I checked if there was already a previous [GitHub Issue](https://github.com/sap-linuxlab/community.sap_install/issues?q=is%3Aissue%20) about this bug
           required: true
