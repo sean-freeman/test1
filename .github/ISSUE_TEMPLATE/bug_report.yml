@@ -1,6 +1,6 @@
 name: Bug report
-description: Create a report to help us improve
-title: "[Bug]: "
+description: Report an unexpected error, a crash, or an incorrect behavior
+title: "ansible_role_name_here: short_desc_here"
 labels: [bug]
 body:
   - type: markdown
