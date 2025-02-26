@@ -1,6 +1,6 @@
 name: Feature request
 description: Request a feature or enhancement to the Ansible Collection
-title: "feat: <ansible_role_name> <short_desc>"
+title: "feat: ansible_role_name_here short_desc_here"
 labels: [enhancement]
 body:
   - type: markdown
