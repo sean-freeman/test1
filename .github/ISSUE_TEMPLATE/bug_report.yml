@@ -112,8 +112,9 @@ body:
 
   - type: markdown
     attributes:
+      label: Before submitting this request, I confirm:
       value: |
-        Before submitting this report, I confirm:
+        **Before submitting this report, I confirm:**
         
         - :white_check_mark: Yes, I read the documentation
 
