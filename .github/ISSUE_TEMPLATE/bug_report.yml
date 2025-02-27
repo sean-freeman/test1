@@ -113,6 +113,7 @@ body:
   - type: markdown
     attributes:
       value: |
+        <br/>
         **Before submitting this report, I confirm:**
         
         - :white_check_mark: Yes, I read the documentation
