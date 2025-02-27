@@ -1,3 +1,4 @@
+---
 name: Bug report
 description: Report an unexpected error, a crash, or an incorrect behavior
 title: "ansible_role_name_here: short_desc_here"
