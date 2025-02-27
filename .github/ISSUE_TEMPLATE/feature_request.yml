@@ -85,11 +85,11 @@ body:
     validations:
       required: false
 
-  - type: checkboxes
-    id: checks
+  - type: markdown
     attributes:
-      label: Checks
-      description: Before submitting this request, please confirm
-      options:
-        - label: Yes, I read the documentation
-          required: true
+      value: |
+        <br/>
+        
+        **Before submitting this request, I confirm:**
+        
+        - :white_check_mark: Yes, I read the documentation
