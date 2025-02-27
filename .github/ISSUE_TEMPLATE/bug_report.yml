@@ -109,3 +109,12 @@ body:
           required: true
         - label: Yes, I checked if there was already a previous [GitHub Issue](https://github.com/sap-linuxlab/community.sap_install/issues?q=is%3Aissue%20) about this bug
           required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        Before submitting this report, I confirm:
+        
+        :white_check_mark: Yes, I read the documentation
+
+        :white_check_mark: Yes, I checked if there was already a previous [GitHub Issue](https://github.com/sap-linuxlab/community.sap_install/issues?q=is%3Aissue%20) about this bug
